@@ -1,0 +1,1 @@
+"""QuickDrop desktop user interface."""

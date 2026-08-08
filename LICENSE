@@ -1,0 +1,73 @@
+QuickDrop Proprietary Freeware License v1.0
+Copyright (c) 2026 impreseo. All rights reserved.
+
+1. LICENSE GRANT
+Subject to these terms, impreseo grants you a limited, non-exclusive,
+non-transferable, revocable license to download, install, and use the official
+QuickDrop application for lawful personal, educational, or internal business
+use at no charge.
+
+2. OWNERSHIP
+QuickDrop, including its original source code, application design, branding,
+artwork, documentation, and other original materials, is proprietary software
+owned by impreseo. This license does not transfer ownership or copyright.
+
+3. PERMITTED USE
+You may:
+- install and use official, unmodified QuickDrop releases on devices you are
+  authorized to use;
+- make reasonable backup copies of the official installer for your own use;
+- use QuickDrop in personal, educational, and internal business workflows.
+
+4. RESTRICTIONS
+Unless you first receive explicit written permission from impreseo, you may not:
+- modify, adapt, translate, patch, or create derivative versions of QuickDrop;
+- copy or reuse QuickDrop source code in another project;
+- rebrand, rename, impersonate, or claim QuickDrop or its original code as your
+  own work;
+- sell, sublicense, rent, lease, monetize, or commercially distribute QuickDrop;
+- redistribute modified builds or unofficial installers;
+- remove, hide, or alter copyright, license, attribution, or ownership notices;
+- reverse engineer, decompile, or disassemble QuickDrop except to the limited
+  extent such a restriction is prohibited by applicable law;
+- use QuickDrop for unlawful access, interception, or transfer of data.
+
+For redistribution of the unmodified official installer, source-code access,
+modification rights, OEM/bundling rights, or other permissions, obtain written
+permission from impreseo first.
+
+5. THIRD-PARTY COMPONENTS
+QuickDrop may include third-party components. Those components remain governed
+by their respective licenses and notices. Nothing in this license changes the
+rights granted by a third-party license. See THIRD_PARTY_NOTICES.md.
+
+6. PRIVACY AND NETWORK USE
+QuickDrop is designed for local-network transfer. You are responsible for using
+it only on networks and devices you trust and are authorized to access.
+
+7. UPDATES AND AVAILABILITY
+Features, compatibility, and availability may change between releases. This
+license does not require impreseo to provide updates, support, or continued
+availability.
+
+8. DISCLAIMER
+QUICKDROP IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OF ANY
+KIND, EXPRESS OR IMPLIED, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
+YOU ARE RESPONSIBLE FOR BACKUPS AND FOR VERIFYING TRANSFERRED FILES.
+
+9. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IMPRESEO WILL NOT BE LIABLE
+FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR
+LOSS OF DATA, PROFITS, OR BUSINESS ARISING FROM USE OF QUICKDROP.
+
+10. TERMINATION
+This license terminates automatically if you materially violate its terms. On
+termination, you must stop using unauthorized copies and remove them where
+applicable. Provisions concerning ownership, restrictions, third-party rights,
+disclaimers, and liability survive termination.
+
+11. PERMISSION AND CONTACT
+Permission requests may be submitted through the official QuickDrop GitHub
+repository owned by the GitHub account "impreseo".
+
+By installing or using QuickDrop, you agree to these terms.

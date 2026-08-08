@@ -1,0 +1,38 @@
+name: Bug report
+description: Tell us what went wrong in QuickDrop.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open QuickDrop\n2. ..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: QuickDrop version
+      placeholder: "2.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, firewall details, phone/browser details, or relevant logs.

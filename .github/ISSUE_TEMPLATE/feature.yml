@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a useful improvement for QuickDrop.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Explain the real situation where this would help.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like QuickDrop to do?
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Extra details
+      description: Optional workflow, UI idea, or example.

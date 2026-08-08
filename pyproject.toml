@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quickdrop-impreseo"
+version = "2.0.0"
+description = "Private local-network file and text transfer between Windows PCs and phones."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "impreseo"}]
+dependencies = [
+  "Pillow>=10.4",
+  "qrcode>=7.4",
+  "tkinterdnd2>=0.4.2"
+]
+
+[project.optional-dependencies]
+build = ["pyinstaller>=6.10"]
+
+[project.scripts]
+quickdrop = "quickdrop.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/impreseo/Quick-Drop"
+Issues = "https://github.com/impreseo/Quick-Drop/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+quickdrop = ["web/*.html", "web/*.css", "web/*.js", "assets/*.ico"]

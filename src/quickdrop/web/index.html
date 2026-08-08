@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080c15">
+  <title>QuickDrop</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brandmark">Q</span><span>QuickDrop</span></div>
+      <span class="pill" id="statusPill"><span class="dot"></span>Local session</span>
+    </header>
+
+    <section class="card auth" id="authView">
+      <div class="eyebrow">PRIVATE LOCAL TRANSFER</div>
+      <h1>Connect to <span id="computerName">QuickDrop PC</span></h1>
+      <p class="muted">Enter the temporary PIN shown on the PC.</p>
+      <form class="connect-form" id="pinForm">
+        <input id="deviceName" maxlength="64" placeholder="Device name" value="My phone" autocomplete="nickname">
+        <input id="pinInput" inputmode="numeric" maxlength="6" placeholder="000000" autocomplete="one-time-code">
+        <label class="remember"><input id="rememberDevice" type="checkbox"> <span>Remember this device on this PC</span></label>
+        <button class="primary" type="submit">Connect securely</button>
+      </form>
+      <div class="error" id="authError"></div>
+      <p class="privacy">Use QuickDrop only on a Wi-Fi/LAN you trust. Transfers stay on the local network, but v2 uses local HTTP for broad phone-browser compatibility.</p>
+    </section>
+
+    <section class="hidden" id="appView">
+      <section class="card hero">
+        <div><div class="eyebrow">CONNECTED</div><h1 id="connectedTitle">Ready to transfer</h1><p class="muted" id="permissionSummary"></p></div>
+        <div class="hero-side"><span class="pill" id="timerText">--:-- left</span><button class="icon-btn" id="refreshBtn" title="Refresh">↻</button></div>
+      </section>
+
+      <nav class="tabs" id="tabs">
+        <button class="tab active" data-tab="download">Download</button>
+        <button class="tab" data-tab="upload">Upload</button>
+        <button class="tab" data-tab="text">Quick Text</button>
+      </nav>
+
+      <section id="downloadTab" class="tab-panel">
+        <div class="section-head"><div><h2>From PC</h2><p class="muted tiny">Files currently shared by QuickDrop</p></div><div class="section-actions"><span class="count" id="fileCount">0</span><a class="secondary mini hidden" id="downloadAll" href="/api/download-all">Download all</a></div></div>
+        <div id="fileList" class="file-list"></div>
+        <div id="emptyFiles" class="card empty">Nothing is shared from the PC yet.</div>
+        <div id="downloadDisabled" class="card empty hidden">PC downloads are disabled for this session.</div>
+      </section>
+
+      <section id="uploadTab" class="tab-panel hidden">
+        <div class="section-head"><div><h2>To PC</h2><p class="muted tiny" id="uploadLimit">Choose files to send</p></div></div>
+        <label class="card upload-zone" id="uploadZone">
+          <input id="fileInput" type="file" multiple hidden>
+          <div class="upload-icon">↑</div><strong>Choose files</strong><span class="muted tiny">or drop them here</span>
+        </label>
+        <div id="uploadDisabled" class="card empty hidden">Phone uploads are disabled on the PC.</div>
+        <div id="uploadList" class="upload-list"></div>
+      </section>
+
+      <section id="textTab" class="tab-panel hidden">
+        <div class="section-head"><div><h2>Quick Text</h2><p class="muted tiny">Links, notes, code, addresses — no file needed</p></div></div>
+        <div class="card text-card"><textarea id="quickText" placeholder="Type or paste text..."></textarea><div class="row"><span class="tiny muted grow" id="textStatus"></span><button class="secondary" id="copyTextBtn">Copy</button><button class="primary" id="saveTextBtn">Send to PC</button></div></div>
+        <div id="textDisabled" class="card empty hidden">Quick Text is disabled on the PC.</div>
+      </section>
+
+      <footer class="phone-footer"><span>QuickDrop v2 • local network only</span><button id="forgetDevice" class="link-button">Forget remembered device</button></footer>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
